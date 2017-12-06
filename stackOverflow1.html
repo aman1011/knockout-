@@ -10,7 +10,7 @@
 
         <h2 data-bind="text: currentCat().name" id="cat-name"></h2>
         <div data-bind="text: currentCat().clickCount" id="cat-count"></div>
-        <img src="" data-bind="click: incrementCount(), attr: {src: currentCat().imgSrc}" id="cat-img" alt="cute cat">
+        <img src="" data-bind="click: incrementCount, attr: {src: currentCat().imgSrc}" id="cat-img" alt="cute cat">
         <h4>NickNames</h4>
         <ul data-bind="foreach: currentCat().nickNames">
             <li data-bind="text: name"></li>
